@@ -6,19 +6,19 @@ class UpcomingAppoitments extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(right: 10),
+      padding: EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.02),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             "Upcoming Appointments",
             style: TextStyle(
-                fontSize: 20.0,
+                fontSize: MediaQuery.of(context).textScaleFactor * 15,
                 fontFamily: 'Circular Std',
                 fontWeight: FontWeight.bold),
           ),
-          const SizedBox(
-            height: 10,
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.010,
           ),
           Container(
             width: MediaQuery.of(context).size.width * 0.88,
@@ -36,7 +36,8 @@ class UpcomingAppoitments extends StatelessWidget {
               ],
             ),
             child: Padding(
-              padding: const EdgeInsets.all(14.0),
+              padding:
+                  EdgeInsets.all(MediaQuery.of(context).size.height * 0.01),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -55,7 +56,7 @@ class UpcomingAppoitments extends StatelessWidget {
                       style: TextStyle(
                         color: const Color(0xFF9146ff),
                         fontFamily: 'Circular Std',
-                        fontSize: MediaQuery.of(context).textScaleFactor * 11,
+                        fontSize: MediaQuery.of(context).size.width * 0.021,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -68,7 +69,7 @@ class UpcomingAppoitments extends StatelessWidget {
                         style: TextStyle(
                           color: const Color.fromARGB(255, 0, 0, 0),
                           fontFamily: 'Circular Std',
-                          fontSize: MediaQuery.of(context).textScaleFactor * 20,
+                          fontSize: MediaQuery.of(context).size.width * 0.045,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -89,17 +90,19 @@ class UpcomingAppoitments extends StatelessWidget {
                         ),
                         child: Icon(Icons.message_outlined,
                             color: const Color(0xFF9146ff),
-                            size: MediaQuery.of(context).textScaleFactor * 25),
+                            size: MediaQuery.of(context).size.width * 0.065),
                       ),
                     ],
                   ),
-                  Text("Dr.Anna Nicolas",
-                      style: TextStyle(
-                        color: const Color.fromARGB(123, 0, 0, 0),
-                        fontFamily: 'Circular Std',
-                        fontSize: MediaQuery.of(context).textScaleFactor * 12,
-                        fontWeight: FontWeight.bold,
-                      )),
+                  Text(
+                    "Dr.Anna Nicolas",
+                    style: TextStyle(
+                      color: const Color.fromARGB(123, 0, 0, 0),
+                      fontFamily: 'Circular Std',
+                      fontSize: MediaQuery.of(context).textScaleFactor * 12,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ],
               ),
             ),

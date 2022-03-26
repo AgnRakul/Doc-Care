@@ -23,7 +23,8 @@ class SearchField extends StatelessWidget {
         ),
         Center(
           child: Padding(
-            padding: const EdgeInsets.only(top: 150),
+            padding:
+                EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.18),
             child: Container(
               width: MediaQuery.of(context).size.width * 0.88,
               height: MediaQuery.of(context).size.height * 0.18,
@@ -42,10 +43,11 @@ class SearchField extends StatelessWidget {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 20.0),
+                    padding: EdgeInsets.only(
+                        top: MediaQuery.of(context).size.height * 0.018),
                     child: SizedBox(
-                      height: 60,
-                      width: 310,
+                      height: MediaQuery.of(context).size.height * 0.080,
+                      width: MediaQuery.of(context).size.width * 0.8,
                       child: TextField(
                         decoration: InputDecoration(
                           enabledBorder: OutlineInputBorder(
@@ -62,8 +64,8 @@ class SearchField extends StatelessWidget {
                             color: Color.fromARGB(255, 197, 197, 204),
                           ),
                           suffixIcon: Container(
-                            height: 60,
-                            width: 55,
+                            height: MediaQuery.of(context).size.height * 0.080,
+                            width: MediaQuery.of(context).size.width * 0.15,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               color: Colors.white,

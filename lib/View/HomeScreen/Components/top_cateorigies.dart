@@ -43,7 +43,7 @@ class TopCategories extends StatelessWidget {
                 child: Column(
                   children: [
                     Image.network(
-                      "https://cdn-icons.flaticon.com/png/512/2209/premium/2209670.png?token=exp=1648223897~hmac=f1054a3384ee10250970dd5cb3ebd8b1",
+                      "https://cdn-icons.flaticon.com/png/512/2682/premium/2682101.png?token=exp=1648284129~hmac=b8bfea25517c708c9a707735dbd28eb3",
                       height: 70,
                       width: 50,
                     ),

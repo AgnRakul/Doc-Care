@@ -41,11 +41,11 @@ class _HomeScreenState extends State<HomeScreen> {
               HeaderWidget(),
               SearchField(),
               SizedBox(
-                height: 20,
+                height: MediaQuery.of(context).size.height * 0.020,
               ),
               UpcomingAppoitments(),
               SizedBox(
-                height: 20,
+                height: MediaQuery.of(context).size.height * 0.020,
               ),
               TopCategories(),
             ],

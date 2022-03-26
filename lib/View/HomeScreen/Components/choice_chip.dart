@@ -46,7 +46,8 @@ class _ChoiceChipWidgetState extends State<ChoiceChipWidget> {
     List<Widget> choices = [];
     for (var item in widget.reportList) {
       choices.add(Container(
-        padding: const EdgeInsets.only(right: 5),
+        padding:
+            EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.005),
         child: ChoiceChip(
           label: Text(item),
           labelStyle: TextStyle(
